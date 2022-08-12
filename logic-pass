@@ -1,1 +1,75 @@
+Editor: Alaq Falah Hasan
+Link: https://colab.research.google.com/drive/1sNcR3hawS1PBSilhWceQkEC0OKMMmXBQ?usp=sharing
+Q1/Write a method that will remove any given character from a String?
+class char_method():
+  def __init__(self,c,d):
+    self.c=c
+    self.d=d
+  def char_remove(self):
+    L=list(self.c)
+    for i in L:
+      if i==self.d:
+        L.remove(i)
+    x="".join(L)
+    return x
+a=input("Enter the text:")
+b=input("Enter the character that you want to remove from the text:")
+a1=char_method(a,b)
+print(a1.char_remove())
+
+Enter the text:alaq falah
+Enter the character that you want to remove from the text:a
+lq flh
+
+Q2/Write a program to find all prime numbers up to a given range of numbers?
+First Method:
+f=[6,11,4,8,3,9,15,18,17,19]
+e=[]
+for i in f:
+  if i==1:
+    continue
+  if i==2:
+    e.append(i)
+  if i==3:
+    e.append(i)
+  if (i%2) and (i%3):
+    e.append(i)
+print(e)
+
+[11, 3, 17, 19]
+
+Second Method:
+z=input("Enter range of numbers: ")
+f=z.split(" ")
+e=[]
+for j in f:
+  i=int(j)
+  if i==1:
+    continue
+  if i==2:
+    e.append(i)
+  if i==3:
+    e.append(i)
+  if i%2 and i%3:
+    e.append(i)
+print(e)
+
+Enter range of numbers: 3 6 7 9 19 57 31 27 44 45 100
+[3, 7, 19, 31]
+
+Q3/write a function that count how many the given character repeated in a given string?
+def char_count(g,h):
+  u=0
+  m=list(g)
+  for i in m:
+    if i==h:
+      u+=1
+  return u
+a=input("Enter the text:")
+b=input("Enter the character that want to count the number of repeated in the text:")
+print(char_count(a,b))
+
+Enter the text:alaq falah
+Enter the character that want to count the number of repeated in the text:a
+4
 
